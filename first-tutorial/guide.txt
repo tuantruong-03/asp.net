@@ -1,0 +1,33 @@
+Create project: 
+ dotnet new webapi -o <folder-name>
+ cd <folder-name>
+ dotnet watch run
+Some keyword
+ [Column(TypenName ... )]
+ Convention in Entity framework: "?"
+Entity Framework:
+ Install dependencies
+  Ctrl + Shift + P -> Nuget Gallery
+  Search "Microsoft.EntityFrameworkCore.Tools/Desgin/SqlServer", add them to "api.csproj"
+ Create "ApplicationDBContext" class, then extends "DbContext"
+  Create constructor then inject "DbContextOptions"
+  Create "public DbSet<Entity>" for each table
+ Connect to databae in "Program.cs":
+   builder.Services.AddDbContext<ApplicationDBContext>(options => {
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+   });
+ Create "ConnectionStrings" in "appsettings.json":
+   "ConnectionStrings": {
+    "DefaultConnection" : "Server=<server-name> ; Database=<database-name>;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+  },
+  Install dotnet-ef: dotnet tool install --global dotnet-ef --version 8.*
+  Add "Migrations": dotnet ef migrations add <migration-name>
+  Update dabase: dotnet ef database update
+Controller
+ In "Program.cs", adding: builder.Services.AddControllers(), app.MapControllers(); (before app.Run())
+ Annotations for an API controller:  [Route("api/v1/stocks")], [ApiController], [HttpGet/Post/Put/Delete("route/{path-variable}")]
+ Interface for API Response: "IActionResult"
+ Get path variable:  [FromRoute]
+
+
+
