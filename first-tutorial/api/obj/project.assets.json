@@ -4687,11 +4687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\C#\\ASP.NET\\first-tutorial\\api\\api.csproj",
+      "projectUniqueName": "E:\\C#\\ASP.NET\\first-tutorial\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "e:\\C#\\ASP.NET\\first-tutorial\\api\\api.csproj",
+      "projectPath": "E:\\C#\\ASP.NET\\first-tutorial\\api\\api.csproj",
       "packagesPath": "C:\\Users\\ideapad\\.nuget\\packages\\",
-      "outputPath": "e:\\C#\\ASP.NET\\first-tutorial\\api\\obj\\",
+      "outputPath": "E:\\C#\\ASP.NET\\first-tutorial\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ideapad\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4787,7 +4787,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

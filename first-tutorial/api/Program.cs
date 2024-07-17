@@ -71,7 +71,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
     options.Password.RequireLowercase = true;
     options.Password.RequireUppercase = true;
     options.Password.RequireNonAlphanumeric = true;
-    options.Password.RequiredLength = 12;
+    options.Password.RequiredLength = 6;
 })
 .AddEntityFrameworkStores<ApplicationDBContext>();
 
@@ -105,6 +105,7 @@ builder.Services.AddScoped<ValidationFilterAttribute>(); // Register filter
 builder.Services.AddScoped<IStockRepository, StockRepository>();
 builder.Services.AddScoped<ICommentRepository, CommentRespository>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IPortfolioRepository, PortfolioRepository>();
 
 
 // </Config manually>
