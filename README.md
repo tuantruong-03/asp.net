@@ -14,7 +14,7 @@ This is a basic Web API application built with ASP.NET Core for managing portfol
 - SQL Server
 
 ## Installation
-- Clone the repository, then cd portfolio/api
-- Update the connection string in ```sh appsettings.json:
-- Apply migrations: dotnet ef database update
-- Run: dotnet watch run
+- Clone the repository, then cd ```portfolio/api```
+- Update the connection string in ```appsettings.json```:
+- Apply migrations: ```dotnet ef database update```
+- Run: ```dotnet watch run```
