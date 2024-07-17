@@ -10,11 +10,11 @@ This is a basic Web API application built with ASP.NET Core for managing portfol
 - **AutoMapper**: Automates the mapping between DTOs and entities.
 
 ## Prerequisites
-- .NET 6 SDK or later
-- SQL Server or any compatible database
+- .NET 8
+- SQL Server
 
 ## Installation
 - Clone the repository, then cd portfolio/api
-- Update the connection string in appsettings.json:
+- Update the connection string in ```sh appsettings.json:
 - Apply migrations: dotnet ef database update
 - Run: dotnet watch run
